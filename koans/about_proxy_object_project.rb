@@ -1,24 +1,24 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-
-# Project: Create a Proxy Class
-#
-# In this assignment, create a proxy class (one is started for you
-# below).  You should be able to initialize the proxy object with any
-# object.  Any messages sent to the proxy object should be forwarded
-# to the target object.  As each message is sent, the proxy should
-# record the name of the method sent.
-#
-# The proxy class is started for you.  You will need to add a method
-# missing handler and any other supporting methods.  The specification
-# of the Proxy class is given in the AboutProxyObjectProject koan.
-
 class Proxy
+  attr_accessor :messages
+
   def initialize(target_object)
     @object = target_object
-    # ADD MORE CODE HERE
+    @messages = []
   end
 
-  # WRITE CODE HERE
+  def method_missing(method_name, *args, &block)
+    @messages << method_name
+    @object.send(method_name, *args, &block)
+  end
+
+  def called?(method)
+    @messages.find{|m| m==method} != nil
+  end
+
+  def number_of_times_called(method)
+    @messages.select {|m| m == method}.length
+  end
 end
 
 # The proxy object should pass the following Koan:
