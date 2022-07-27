@@ -44,7 +44,8 @@ Dependências necessárias para o projeto:
 
 ## ⌨ Como executar os testes da calculadora
 ```sh
-- rspec "TDD\specs\calculadora_spec.rb"
+- Dentro da pasta "Tdd's" executar o código abaixo:
+- rspec "specs\calculadora_spec.rb"
 ```
 
 ## 📝 Licença
