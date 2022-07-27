@@ -8,14 +8,13 @@
   
 ## ✔ Pré requisitos:
 * [VsCode](https://code.visualstudio.com/)
-* [Ruby25x64](https://rubyinstaller.org/downloads/)
+* [Ruby](https://rubyinstaller.org/downloads/)
 * [CMDER](https://cmder.net/)
 * [Ruby Koans](http://rubykoans.com/)
 * [GitHub](https://www.bing.com/ck/a?!&&p=a944a9613a7abbdcc7966dbc2a83fe509f78a378e05c449a7dcb6e2b0e3db9f6JmltdHM9MTY1Njg5MDA2MyZpZ3VpZD01OGIwMTZjMC1jODdiLTRjOGMtOWE0OC04ZTQ0MmQ2YzRhM2UmaW5zaWQ9NTE3OQ&ptn=3&fclid=dfaf5879-fb25-11ec-a1e9-03dc2208b9e4&u=a1aHR0cHM6Ly9naXRodWIuY29tLw&ntb=1)
-* Gem: Rspec
   
 ## 📥 Instalação
-Dependências Necessárias para o projeto 
+Dependências necessárias para o projeto: 
 ```sh
 - gem install rspec -v 3.4.0
 - gem 'rspec', '~> 3.4'
@@ -28,3 +27,31 @@ Dependências Necessárias para o projeto
 * Gherkin Indent
 * EditorConfig
 * Ruby Solargraph
+
+## ⚙ Métodos da calculadora:
+* Adição
+* Subtração
+* Multiplicação
+* Divisão
+* Potenciação
+* Porcentagem
+* Volume
+
+## ⌨ Como executar os testes Ruby_Koans
+```sh
+- ruby about_"name".rb
+```
+
+## ⌨ Como executar os testes da calculadora
+```sh
+- rspec "TDD\specs\calculadora_spec.rb"
+```
+
+## 📝 Licença
+Copyright © 2022 [Leonardo Moresco](https://github.com/LeonardoMoresco).<br />
+Copyright © 2022 [Compass](https://compass.uol/).<br /> 
+
+## Autor
+# Leonardo Moresco
+* Github: https://github.com/LeonardoMoresco
+* Linkedln: https://www.linkedin.com/in/leonardo-moresco-7a4794239/
