@@ -36,6 +36,7 @@ Dependências necessárias para o projeto:
 * Potenciação
 * Porcentagem
 * Volume
+* Raiz quadrada
 
 ## ⌨ Como executar os testes Ruby_Koans
 ```sh
