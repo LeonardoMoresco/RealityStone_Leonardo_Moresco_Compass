@@ -5,7 +5,7 @@ describe('Calculadora') do
     calculadora = Calculadora.new
 
 
-    ### MÉTODO DE SOMA ###
+    ### METODO DE SOMA ###
     it('Deve somar dois números inteiros positivos')do
     expect(calculadora.soma(4, 5)).to eq 9
     end
@@ -14,11 +14,11 @@ describe('Calculadora') do
     expect(calculadora.soma(9, 0)).to eq 9
     end
 
-    it('Deve somar números negativos')do
+    it('Deve somar dois números negativos')do
     expect(calculadora.soma(-9, -10)).to eq -19
     end 
 
-    it('Deve somar um numero negativo e outro positivo')do
+    it('Deve somar um número negativo e outro positivo')do
     expect(calculadora.soma(-9, 5)).to eq -4
     end
 
@@ -31,7 +31,7 @@ describe('Calculadora') do
     end
 
 
-    ### MÉTODO DE SUBTRAÇÃO ###
+    ### METODO DE SUBTRACAO ###
     it('Deve subtrair dois números inteiros positivos')do
     expect(calculadora.subtracao(8, 2)).to eq 6
     end
@@ -57,7 +57,7 @@ describe('Calculadora') do
     end
 
 
-    ### MÉTODO DE MULTIPLICAÇÃO ###
+    ### METODO DE MULTIPLICACAO ###
     it('Deve multiplicar dois números inteiros positivos')do
     expect(calculadora.multiplicacao(8, 4)).to eq 32
     end
@@ -83,7 +83,7 @@ describe('Calculadora') do
     end
 
     
-    ### MÉTODO DE DIVISÃO ###
+    ### METODO DE DIVISAO ###
     it('Deve didivir dois números inteiros positivos')do
     expect(calculadora.divisao(20, 5)).to eq 4
     end
@@ -105,7 +105,7 @@ describe('Calculadora') do
     end
 
     
-    ### MÉTODO DE POTENCIAÇÃO ###
+    ### METODO DE POTENCIACAO ###
     it('Deve calcular a potencia de um número positivo')do
     expect(calculadora.potencia(9, 2)).to eq 81
     end
@@ -123,7 +123,7 @@ describe('Calculadora') do
     end
     
 
-    ### MÉTODO DE PORCENTAGEM ###
+    ### METODO DE PORCENTAGEM ###
     it('Deve calcular a porcentagem de um número positivo')do
     expect(calculadora.porcentagem(50, 100)).to eq 50
     end
@@ -137,38 +137,71 @@ describe('Calculadora') do
     end
 
 
-    ### MÉTODO DE VOLUME ###
-    it("Deve calcular o volume com medidas inteiras positivas")do
+    ### METODO DE VOLUME ###
+    it('Deve calcular o volume com medidas inteiras positivas')do
     expect(calculadora.volume(2, 6, 9)).to eq 108
     end
 
-    it("Deve calcular o volume com largura 0")do
+    it('Deve calcular o volume com largura 0')do
     expect(calculadora.volume(0, 5, 78)).to eq 0
     end
 
-    it("Deve calcular o volume com altura 0")do
+    it('Deve calcular o volume com altura 0')do
     expect(calculadora.volume(32, 0, 7)).to eq 0
     end
 
-    it("Deve calcular o volume com comprimento 0")do
+    it('Deve calcular o volume com comprimento 0')do
     expect(calculadora.volume(68, 50, 0)).to eq 0
     end
 
-    it("Deve calcular o volume com medidas float positivas")do
+    it('Deve calcular o volume com medidas float positivas')do
     expect(calculadora.volume(6.3, 2.8, 11.1)).to eq 195.8
     end
 
-    it("Deve calcular o volume com medidas inteiras negativas")do
-    expect(calculadora.volume(-6, -20, -2)).to eq "Volume ERROR! Não existe largura, altura ou comprimento com valores negativos!"
+    it('Deve calcular o volume com medidas inteiras negativas')do
+    expect(calculadora.volume(-6, -20, -2)).to eq "ERROR! Não existe largura, altura ou comprimento com valores negativos!"
     end
 
-    it("Deve calcular o volume com medidas float negativas")do
-    expect(calculadora.volume(-9.5, -3.6, -30.9)).to include "Volume ERROR! Não existe largura, altura ou comprimento com valores negativos!"
+    it('Deve calcular o volume com medidas float negativas')do
+    expect(calculadora.volume(-9.5, -3.6, -30.9)).to include "ERROR! Não existe largura, altura ou comprimento com valores negativos!"
+    end
+   
+    
+    ### METODO DE RAIZ ###
+    it('Deve calcular a raiz quadrada de um número positivo')do
+    expect(calculadora.raiz(25)).to eq 5
     end
 
+    it('Deve calcular a raiz quadrada do número 0')do
+    expect(calculadora.raiz(0)).to eq 0
+    end
 
+    it('Deve calcular a raiz quadrada de um numero negativo')do 
+    expect(calculadora.raiz(-9)).to eq "ERROR! Não é possível calcular a raiz de um número negativo!"
+    end 
 
+    it('Deve calcular a raiz de números float positivos')do
+    expect(calculadora.raiz(25.5)).to eq 5.05
+    end
 
+    ### METODO DE MEDIA ###
+    it('Deve calcular a media de dois numeros positivos')do
+    expect(calculadora.media(30, 20)).to eq 25
+    end
 
+    it('Deve calcular a media de 0')do
+    expect(calculadora.media(0, 0)).to eq 0
+    end
 
+    it('Deve calcular a media de um número somando com 0')do
+    expect(calculadora.media(10, 0)).to eq 5
+    end
+
+    it('Deve calcular a media de dois números negativos')do
+    expect(calculadora.media(-10, -20)).to eq -15
+    end
+
+    it('Deve calcular a media de dois números iguais')do
+    expect(calculadora.media(20, 20)).to eq 20
+    end
 end
