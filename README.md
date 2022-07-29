@@ -37,8 +37,9 @@ Dependências necessárias para o projeto:
 * Porcentagem
 * Volume
 * Raiz quadrada
+* Média
 
-## ⌨ Como executar os testes Ruby_Koans
+## ⌨ Como executar os testes dos Ruby_Koans
 ```sh
 - ruby about_"name".rb
 ```
