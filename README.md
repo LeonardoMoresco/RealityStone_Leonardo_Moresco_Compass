@@ -58,3 +58,4 @@ Copyright © 2022 [Compass](https://compass.uol/).<br />
 # Leonardo Moresco
 * Github: [@LeonardoMoresco](https://github.com/LeonardoMoresco)
 * Linkedln: [@LeonardoMoresco](https://www.linkedin.com/in/leonardo-moresco-7a4794239/)
+* E-ail: leomoresco1903@gmail.com
